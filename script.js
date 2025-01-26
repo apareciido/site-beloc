@@ -11,3 +11,20 @@ const menuToggle = document.getElementById('menu-toggle');
         menuToggle.textContent = '☰'; // Change back to ☰ when menu is closed
       }
     });
+
+//navbar fim
+
+//catálogo
+
+function filterProducts(category) {
+  const products = document.querySelectorAll('.product');
+  if (category === 'all') {
+    products.forEach(product => product.style.display = 'block');
+  } else {
+    products.forEach(product => {
+      product.style.display = product.getAttribute('data-category') === category ? 'block' : 'none';
+    });
+  }
+}
+
+//catálogo fim

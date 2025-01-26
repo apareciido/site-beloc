@@ -45,7 +45,7 @@ header {
     gap: 10px;
   }
   .nav-links a {
-    font-family: "montserrat";
+    font-family: "Montserrat", Helvetica, sans-serif;
     color: #6969f8;
     text-decoration: none;
     transition: color 0.3s;
@@ -59,6 +59,101 @@ header {
     padding: 25px;
     
   }
+
+  /* HEADER - NAVBAR - FIM */
+
+  .banner-principal {
+    width: 100%;
+  }
+  .banner-celular {
+    display: none;
+  }
+
+  /* BANNER - FIM */
+
+  /* CATÁLOGO */
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .filtro {
+    background-color: #0056b3;
+    padding: 30px;
+    border-radius: 50px;
+    max-width: 1600px;
+  }
+  .filtro > h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  } 
+  .filter-bar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .filter-bar button {
+    padding: 10px 20px;
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #ExAll {
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgb(95, 176, 252);
+    color: white;
+    border: none;
+  }
+  .filter-bar button:hover {
+    background-color: #0056b3;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .product p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* CATÁLOGO - FIM */
+  
+  @media (max-width: 768px) {
+    .banner-principal {
+     display: none;
+    }
+    .banner-celular {
+      display: block;
+      width: 100%;
+    }
+  }
+
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -71,6 +166,14 @@ header {
       top: 60px;
       left: 0;
       width: 100%;
+    }
+    .nav-links a:hover {
+      background-color: #0056b3;
+      padding: 0;
+      color: #ffffff;
+    }
+    .nav-links a {
+      color: white;
     }
     .nav-links.active {
       display: flex;

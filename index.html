@@ -22,7 +22,54 @@
           </nav>
     </header>
     <section>
-        
+      <img class="banner-principal" src="images/banner-principal.jpg" alt="">
+      <img class="banner-celular" src="images/banner-celular.jpg" alt="">
+    </section>
+    <section id="catalogo">
+      <div class="container">
+        <div class="filtro">
+          <h2>Catálogo de Produtos</h2>
+          <button onclick="filterProducts('all')" id="ExAll">Exibir Todos</button>
+          <div class="filter-bar">
+            <button onclick="filterProducts('escoras_e_andaimes')">Escoras e Andaimes</button>
+            <button onclick="filterProducts('equipamentos_de_demolicao')">Equipamentos de Demolição</button>
+            <button onclick="filterProducts('equipamentos_de_concretagem')">Equipamentos de Concretagem</button>
+            <button onclick="filterProducts('equipamentos_de_compactacao')">Equipamentos de Compactação</button>
+            <button onclick="filterProducts('ferramentas_eletricas')">Ferramentas Elétricas</button>
+            <button onclick="filterProducts('maquinas_e_motores')">Máquinas e Motores</button>
+          </div>
+        </div>
+    
+        <div class="product-grid" id="productGrid">
+          <!-- Espaço para adicionar os produtos -->
+          <!-- Exemplo de produto -->
+          <div class="product" data-category="escoras_e_andaimes">
+            <h3>Produto 1</h3>
+            <p>Categoria: Escoras e Andaimes</p>
+          </div>
+          <div class="product" data-category="equipamentos_de_demolicao">
+            <h3>Produto 2</h3>
+            <p>Categoria: Equipamentos de Demolição</p>
+          </div>
+          <div class="product" data-category="equipamentos_de_concretagem">
+            <h3>Produto 3</h3>
+            <p>Categoria: Equipamentos de Concretagem</p>
+          </div>
+          <div class="product" data-category="equipamentos_de_compactacao">
+            <h3>Produto 4</h3>
+            <p>Categoria: Equipamentos de Compactação</p>
+          </div>
+          <div class="product" data-category="ferramentas_eletricas">
+            <h3>Produto 5</h3>
+            <p>Categoria: Ferramentas Elétricas</p>
+          </div>
+          <div class="product" data-category="maquinas_e_motores">
+            <h3>Produto 6</h3>
+            <p>Categoria: Máquinas e Motores</p>
+          </div>
+        </div>
+      </div>
+    
     </section>
     <footer></footer>
     <script src="script.js"></script>
