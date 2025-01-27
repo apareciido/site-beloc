@@ -48,10 +48,10 @@ header {
     font-family: "Montserrat", Helvetica, sans-serif;
     color: #6969f8;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.5s;
     padding: 25px;
     height: 70px;
-    border-radius: 10px;
+    border-radius: 0;
   }
   .nav-links a:hover {
     color: white;
@@ -74,33 +74,41 @@ header {
   /* CATÁLOGO */
 
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0;
   }
   .filtro {
     background-color: #0056b3;
-    padding: 30px;
-    border-radius: 50px;
-    max-width: 1600px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 1200px;
+    margin: auto;
   }
   .filtro > h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
     color: white;
     font-weight: lighter;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .categoria {
+    font-family: "Montserrat";
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 15px;
   } 
   .filter-bar {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 15px;
+    justify-content: space-between;
+    gap: 10px;
     margin-bottom: 20px;
   }
   .filter-bar button {
     padding: 10px 20px;
-    height: 200px;
-    width: 200px;
+    height: 130px;
+    width: 130px;
     border: none;
     border-radius: 50%;
     background-color: #007bff;
@@ -108,17 +116,18 @@ header {
     cursor: pointer;
     transition: background-color 0.3s;
   }
-  #ExAll {
+  .show-all {
+    display: none;
     height: 50px;
-    width: 200px;
+    width: 120px;
     margin-bottom: 20px;
     border-radius: 10px;
     background-color: rgb(95, 176, 252);
     color: white;
     border: none;
   }
-  .filter-bar button:hover {
-    background-color: #0056b3;
+  .filter-bar button:active {
+    background-color: #8ac3ff;
   }
   .product-grid {
     display: grid;
@@ -152,8 +161,36 @@ header {
       display: block;
       width: 100%;
     }
+    .filtro {
+      background-color: #0056b3;
+      padding: 20px;
+      border-radius: 25px;
+      width: 100%;
+      margin: auto;
   }
-
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+  @media (max-width: 1000px){
+    .filtro {
+      background-color: #0056b3;
+      padding: 20px;
+      border-radius: 25px;
+      width: 100%;
+      margin: auto;
+  }
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -183,5 +220,4 @@ header {
       padding: 10px 0;
     }
   }
-
-
+}

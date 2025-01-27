@@ -28,8 +28,8 @@
     <section id="catalogo">
       <div class="container">
         <div class="filtro">
-          <h2>Catálogo de Produtos</h2>
-          <button onclick="filterProducts('all')" id="ExAll">Exibir Todos</button>
+          <h2>Catálogo de <strong>Produtos</strong></h2>
+          <p class="categoria">Filtre por Categoria</p>
           <div class="filter-bar">
             <button onclick="filterProducts('escoras_e_andaimes')">Escoras e Andaimes</button>
             <button onclick="filterProducts('equipamentos_de_demolicao')">Equipamentos de Demolição</button>
@@ -38,6 +38,7 @@
             <button onclick="filterProducts('ferramentas_eletricas')">Ferramentas Elétricas</button>
             <button onclick="filterProducts('maquinas_e_motores')">Máquinas e Motores</button>
           </div>
+          <button class="show-all" id="showAllButton" onclick="filterProducts('all')">Exibir Todos</button>
         </div>
     
         <div class="product-grid" id="productGrid">

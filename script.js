@@ -18,12 +18,16 @@ const menuToggle = document.getElementById('menu-toggle');
 
 function filterProducts(category) {
   const products = document.querySelectorAll('.product');
+  const showAllButton = document.getElementById('showAllButton');
+
   if (category === 'all') {
     products.forEach(product => product.style.display = 'block');
+    showAllButton.style.display = 'none';
   } else {
     products.forEach(product => {
       product.style.display = product.getAttribute('data-category') === category ? 'block' : 'none';
     });
+    showAllButton.style.display = 'inline-block';
   }
 }
 
