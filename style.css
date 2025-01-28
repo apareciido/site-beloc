@@ -26,8 +26,7 @@ header {
   }
   .navbar a img {
     margin: 0;
-    width: 70px;
-    height: 70px;
+    width: 200px;
   }
   .menu-toggle {
     display: none;
@@ -42,7 +41,7 @@ header {
     padding: 0px;
     margin: 0px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   .nav-links a {
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -102,19 +101,46 @@ header {
   .filter-bar {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 20px;
   }
   .filter-bar button {
     padding: 10px 20px;
-    height: 130px;
-    width: 130px;
+    width: 140px;
+    height: 140px;
     border: none;
     border-radius: 50%;
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .andaime {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .demolicao {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .concretagem {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .compactacao {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .eletricas {
+    width: 140px;
+    border-radius: 50%;
+  }
+  .motores {
+    width: 140px;
+    border-radius: 50%;
   }
   .show-all {
     display: none;
@@ -145,10 +171,14 @@ header {
   .product h3 {
     font-size: 18px;
     margin: 10px 0;
+    font-family: "Poppins";
   }
   .product p {
     font-size: 14px;
     color: #555;
+  }
+  .product > img {
+    width: 250px;
   }
 
   /* CATÁLOGO - FIM */
@@ -190,6 +220,19 @@ header {
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 20px;
+  }
+  @media (max-width: 480px) {
+    .filter-bar button {
+      padding: 10px 20px;
+      width: 70px;
+      height: 70px;
+      border: none;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
   }
   @media (max-width: 768px) {
     .menu-toggle {
