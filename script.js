@@ -34,7 +34,7 @@ function filterProducts(category) {
 //catálogo fim
 
 //orçamento
-
+/*
 function filterProducts(category) {
   const products = document.querySelectorAll('.product');
   const showAllButton = document.getElementById('showAllButton');
@@ -48,7 +48,7 @@ function filterProducts(category) {
     });
     showAllButton.style.display = 'inline-block';
   }
-}
+}*/
 
 function requestQuote(productName) {
   const formContainer = document.getElementById('formContainer');
