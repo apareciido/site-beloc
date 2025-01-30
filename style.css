@@ -320,6 +320,52 @@ header {
   }
 
   /* CONTATO */
+#contato {
+  background-color: #0056b3;
+  margin: auto;
+  display: block;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin: 2px;
+}
+#form2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+#form2 > label {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#form2 > input, textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+#form2 > h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+#form2 > button {
+  padding: 10px;
+  border: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: #f18016;
+  transition: background-color 0.3s;
+}
+#form2 > button:hover {
+  background-color: #a35914;
+}
+
 
 
   
@@ -349,6 +395,32 @@ header {
     margin: 0;
     width: 140px;
   }
+  .icon {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+  }
+  .icon .fab {
+    padding-top: 8px;
+  }
+  .icon:hover {
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+  }
+
  
   @media (max-width: 400px) {
     .filter-bar button {
