@@ -184,3 +184,14 @@ const formSubmit = new FormSubmit({
   error: "<p class='error'>Não foi possível enviar sua mensagem. Tente novamente.</p>",
 });
 formSubmit.init();
+
+// modal
+
+function openModal(id) {
+      document.getElementById(id).showModal();
+    }
+
+    // Função para fechar um modal específico
+    function closeModal(id) {
+      document.getElementById(id).close();
+    }

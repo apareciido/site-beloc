@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="A BELOC oferece as melhores soluções em ferramentas leves para construção e reforma. Com experiência na gestão de frotas de equipamentos, a empresa se destaca pelo profissionalismo e compromisso com a satisfação dos clientes. Atuamos na locação de equipamentos sem operador e na manutenção especializada como Assistência Autorizada de grandes marcas, como CID, CSM, Makita, Vonder e Wesco.">
     <title>Beloc - Locação de Equipamentos</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -52,7 +53,13 @@
             <img src="images/andaimes/diagonal-andaime.png" alt="">
             <h3>Diagonal Andaime</h3>
             <p>Categoria: Escoras e Andaimes</p>
-            <button onclick="requestQuote('Diagonal Andaime')">Solicitar Orçamento</button>
+            <button class="solicitar" onclick="requestQuote('Diagonal Andaime')">Solicitar Orçamento</button>
+            <button class="open-btn" onclick="openModal('modal1')">Leia Mais</button>
+            <dialog id="modal1">
+              <p>Este é o Modal 1</p>
+              <button class="close-btn" onclick="closeModal('modal1')">Fechar</button>
+            </dialog>
+
           </div>
           <div class="product" data-category="escoras_e_andaimes">
             <img src="images/andaimes/plataforma-tesoura-12m.png" alt="">
@@ -261,6 +268,31 @@
         </div>
       </div>
     </section>
+    <a href="https://api.whatsapp.com/send?phone=5587981009915&text=Ol%C3%A1%20quero%20um%20or%C3%A7amento!" target="_blank" class="orcamento"><i class="fab fa-whatsapp"></i>   Entre Em Contato!</a>
+    <div id="contato">
+      <div class="form-container" id="formContainer">
+        <h3>Solicitar Orçamento</h3>
+        <form  id="quoteForm"
+        action="https://formsubmit.co/ajax/oaparecido363@gmail.com"
+        method="POST"
+        data-form
+        >
+        <input type="hidden" name="_subject" value="Solicitação de Orçamento">
+          <input type="hidden" name="_captcha" value="false">
+        <label for="product">Produto Selecionado</label>
+        <input type="text" id="product" name="product" readonly>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Email" required />
+        <label for="phone">Número</label>
+        <input type="tel" name="phone" id="phone" placeholder="Whatsapp" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+        <button type="submit" data-button>Enviar</button>
+        </form>
+      </div>
+    </div>
    <!--ction>
       <div class="form-container" id="formContainer">
         <h3>Solicitar Orçamento</h3>
@@ -295,31 +327,8 @@
     <section id="sobre-nos">
       <h3>Somos a <strong>Beloc</strong></h3>
       <p>Idealizada a partir de uma consistente experiência de um Engenheiro Mecânico com a gestão de frota de equipamentos leves e pesados para a construção civil, a BELOC nasceu em Fevereiro de 2014, na cidade de Belo Jardim – PE com o objetivo de oferecer as melhores soluções em ferramentas leves para aqueles que desejam construir ou reformar. Hoje a BELOC é amplamente reconhecida pelo profissionalismo de sua atuação na região Agreste de Pernambuco, tendo como foco principal a satisfação dos clientes em todos os serviços prestados, desde a locação de bens móveis sem operador até a manutenção de equipamentos como Assistência Autorizada de grandes marcas como: CID, CSM, Makita, Vonder e Wesco.</p>
-    </section>
-    <a href="https://api.whatsapp.com/send?phone=5587981009915&text=Ol%C3%A1%20quero%20um%20or%C3%A7amento!" target="_blank" class="orcamento"><i class="fab fa-whatsapp"></i>   Entre Em Contato!</a>
-    <div class="contato">
-      <div class="form-container" id="formContainer">
-        <h3>Contato</h3>
-        <form  id="quoteForm"
-        action="https://formsubmit.co/oaparecido363@gmail.com"
-        method="POST"
-        data-form
-        >
-        <input type="hidden" name="_subject" value="Solicitação de Orçamento">
-          <input type="hidden" name="_captcha" value="false">
-  
-          <label for="product">Produto Selecionado</label>
-          <input type="text" id="product" name="product" readonly>
-          <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" placeholder="Nome" required />
-           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Email" required />
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" required></textarea>
-        <button type="submit" data-button>Enviar</button>
-      </form>
-      </div>
+    </section>  
     <footer></footer>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
