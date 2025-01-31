@@ -261,10 +261,9 @@
         </div>
       </div>
     </section>
-    <section>
+   <!--ction>
       <div class="form-container" id="formContainer">
         <h3>Solicitar Orçamento</h3>
-        <a href="https://api.whatsapp.com/send?phone=5587981009915&text=Ol%C3%A1%20quero%20um%20or%C3%A7amento!" target="_blank" class="orcamento"><i class="fab fa-whatsapp"></i>   Entre Em Contato!</a>
         <form id="quoteForm" action="https://formsubmit.co/oaparecido363@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Solicitação de Orçamento">
           <input type="hidden" name="_captcha" value="false">
@@ -290,30 +289,36 @@
           <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
   
           <button type="submit" id="send">Enviar</button>
-        </form>
+        </form>-->
       </div>
     </section>
     <section id="sobre-nos">
       <h3>Somos a <strong>Beloc</strong></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat mollitia quas cumque iusto. Quaerat asperiores temporibus consequatur deserunt laborum facilis nobis enim at odit rerum reiciendis tempore, ducimus qui! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quia dolore minus possimus delectus iusto, exercitationem quam aliquid porro error officia reprehenderit quaerat. Autem mollitia quasi adipisci alias tenetur ullam!</p>
+      <p>Idealizada a partir de uma consistente experiência de um Engenheiro Mecânico com a gestão de frota de equipamentos leves e pesados para a construção civil, a BELOC nasceu em Fevereiro de 2014, na cidade de Belo Jardim – PE com o objetivo de oferecer as melhores soluções em ferramentas leves para aqueles que desejam construir ou reformar. Hoje a BELOC é amplamente reconhecida pelo profissionalismo de sua atuação na região Agreste de Pernambuco, tendo como foco principal a satisfação dos clientes em todos os serviços prestados, desde a locação de bens móveis sem operador até a manutenção de equipamentos como Assistência Autorizada de grandes marcas como: CID, CSM, Makita, Vonder e Wesco.</p>
     </section>
-    <section id="contato">
-      <form id="form2" action="https://formsubmit.co/oaparecido363@gmail.com" method="post">
+    <a href="https://api.whatsapp.com/send?phone=5587981009915&text=Ol%C3%A1%20quero%20um%20or%C3%A7amento!" target="_blank" class="orcamento"><i class="fab fa-whatsapp"></i>   Entre Em Contato!</a>
+    <div class="contato">
+      <div class="form-container" id="formContainer">
         <h3>Contato</h3>
-        <label for="name">Nome</label>
-        <input type="text" id="name2" name="name" placeholder="Nome" required>
-        <label for="email">Email</label>
-        <input type="email" id="email2" name="email" placeholder="Email" required>
-        <label for="phone">Número</label>
-        <input type="tel" name="phone" id="phone2" placeholder="Whatsapp" required>
-        <label for="message">Mensagem</label>
-        <textarea name="message" id="message2" rows="3"></textarea>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
-        <button type="submit" id="send">Enviar</button>
+        <form  id="quoteForm"
+        action="https://formsubmit.co/oaparecido363@gmail.com"
+        method="POST"
+        data-form
+        >
+        <input type="hidden" name="_subject" value="Solicitação de Orçamento">
+          <input type="hidden" name="_captcha" value="false">
+  
+          <label for="product">Produto Selecionado</label>
+          <input type="text" id="product" name="product" readonly>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome" required />
+           <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Email" required />
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+        <button type="submit" data-button>Enviar</button>
       </form>
-
-    </section>
+      </div>
     <footer></footer>
     <script src="script.js"></script>
 </body>
