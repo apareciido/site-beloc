@@ -35,6 +35,7 @@ header {
     border: none;
     color: #699bf8;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
   }
   .nav-links {
     list-style: none;
@@ -51,6 +52,7 @@ header {
     padding: 25px;
     height: 70px;
     border-radius: 0;
+    transition: background 0.3s ease-in-out;
   }
   .nav-links a:hover {
     color: white;
@@ -107,7 +109,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
+    width: 700px;
   }
   dialog::backdrop {
     background: rgba(0, 0, 0, 0.5);
@@ -219,6 +221,7 @@ header {
   .product {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 5px;
     background: #fff;
     border: 1px solid #ddd;
@@ -530,16 +533,20 @@ header {
   }
   @media (max-width: 768px) {
     .menu-toggle {
-      display: block;
+      display: flex;
     }
     .nav-links {
-      display: none;
+      display: flex;
       flex-direction: column;
       background-color: #0056b3;
       position: absolute;
       top: 60px;
       left: 0;
       width: 100%;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease-in-out, transform ease-in-out;
+      visibility: hidden;
     }
     .nav-links a:hover {
       background-color: #0056b3;
@@ -551,6 +558,9 @@ header {
     }
     .nav-links.active {
       display: flex;
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
     }
     .nav-links li {
       text-align: center;
