@@ -33,23 +33,6 @@ function filterProducts(category) {
 
 //catálogo fim
 
-//orçamento
-/*
-function filterProducts(category) {
-  const products = document.querySelectorAll('.product');
-  const showAllButton = document.getElementById('showAllButton');
-
-  if (category === 'all') {
-    products.forEach(product => product.style.display = 'block');
-    showAllButton.style.display = 'none';
-  } else {
-    products.forEach(product => {
-      product.style.display = product.getAttribute('data-category') === category ? 'block' : 'none';
-    });
-    showAllButton.style.display = 'inline-block';
-  }
-}*/
-
 function requestQuote(productName) {
   const formContainer = document.getElementById('formContainer');
   const productInput = document.getElementById('product');
